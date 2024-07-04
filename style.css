@@ -35,12 +35,6 @@ header p {
   animation: fadeInUp 1s ease;
 }
 
-section#certifications ul,
-section#accomplishments ul {
-    list-style-type: none;
-    padding: 0;
-}
-
 section#certifications li,
 section#accomplishments li {
     margin-bottom: 10px;
@@ -70,7 +64,7 @@ section {
 section#projects .project {
   background: #ffffff; /* Normal white background */
   margin: 10px 0; /* Adjusted margin around each project */
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   border: 2px solid #e040fb; /* Neon purple border */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
