@@ -1,0 +1,133 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff; /* Normal white background */
+}
+
+header {
+  background: #9370DB; /* Medium purple color */
+  color: #fff;
+  padding: 50px 0; /* Adjusted padding */
+  text-align: center;
+  margin:2%;
+  position: relative;
+}
+
+header .profile-photo {
+  border-radius: 50%;
+  width: 170px; /* Adjusted size of profile photo */
+  height: 170px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  animation: fadeInDown 1s ease;
+}
+
+header h1 {
+  margin: 10px 0 5px;
+  font-size: 32px; /* Adjusted font size */
+  animation: fadeInDown 1s ease;
+}
+
+header p {
+  margin: 0;
+  font-size: 16px; /* Adjusted font size */
+  animation: fadeInUp 1s ease;
+}
+
+header .header-gif {
+  margin-top: 20px;
+}
+
+header .header-gif img {
+  width: 80px; /* Adjusted size of header GIF */
+  height: auto;
+}
+
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+section {
+  margin: 30px 0; /* Adjusted margin between sections */
+}
+
+section#projects .project {
+  background: #ffffff; /* Normal white background */
+  margin: 10px 0; /* Adjusted margin around each project */
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #e040fb; /* Neon purple border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+section#projects .project:hover {
+  transform: translateY(-10px);
+}
+
+.project-gif {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+section#contact a {
+  color: #0277bd; /* Darker shade for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Optionally, make the link bold */
+  transition: color 0.3s;
+}
+
+section#contact a:hover {
+  color: #01579b; /* Darker shade for hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+section#contact .social-media {
+  margin-top: 10px;
+}
+
+section#contact .social-media a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+section#contact .social-media a:hover {
+  color: #0277bd; /* Darker shade for hover */
+}
+
+
+
+/* Animation for movable objects */
+@keyframes move {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.movable {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: #d32f2f; /* Red color */
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 50px;
+  animation: move 2s infinite;
+}
