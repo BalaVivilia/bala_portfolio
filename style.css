@@ -60,7 +60,7 @@ section#accomplishments li {
 .container {
   width: 80%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 1px 0;
 }
 
 section {
@@ -98,7 +98,9 @@ section#contact a:hover {
   color: #01579b; /* Darker shade for hover */
   text-decoration: underline; /* Underline on hover */
 }
-section#accomplishments {
+
+
+ction#accomplishments {
   background-color: #f9f9f9; /* Light gray background */
   padding: 40px 20px;
 }
@@ -120,7 +122,6 @@ section#accomplishments li {
   border-left: 4px solid #4CAF50; /* Green border on the left */
   padding-left: 10px;
 }
-
 
 
 /* Animation for movable objects */
